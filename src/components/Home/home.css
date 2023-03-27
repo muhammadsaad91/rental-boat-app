@@ -1,0 +1,358 @@
+.video{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -99999999;
+    filter: brightness(0.3);
+  
+  }
+  
+  /* make this video full screen and add this code in your css file fully responsive */
+  @media screen and (max-width: 900px) {
+    .video {
+     display: none;
+    }
+    .Mian_page {
+      background: url("https://kelownadowntownmarina.com/assets/uploads/banners/Downtown-Marina-Banner-Slide1.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+
+    }
+  }
+  
+  
+.Mian_page{
+
+    width: 100%;
+    /* padding: 5rem 0; */
+    height: 120vh;
+    /* background-color: black; */
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .main-left{
+    margin-top: 5rem;
+    width: 50%;
+    /* height: 100%; */
+    /* border: 2px solid red; */
+    overflow: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-left img{
+    width: 70%;
+    /* height: 100%; */
+    /* border: 2px solid red; */
+    border-radius: 10px;
+  }
+  
+  .main-right{
+    /* margin-top: 5rem; */
+    width: 50%;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  .main-right-top{
+    width: 70%;
+    height: 60%;
+    margin-top: 10vh;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    /* align-items: center; */
+    /* text-align: center; */
+  }
+  .main-right-top a{
+    background-color: #ad9f56;
+    color: black;
+    width: 60%;
+    height: 15%;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+  }
+  .main-right-top button{
+    background-color: black;
+    border: 2px solid white;
+    color: white;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+  }
+  .main-right-top button:hover{
+    background-color: white;
+    color: black;
+    border: none;
+  }
+  .main-right h1{
+    font-size: 4rem;
+    color: var(--textclr);
+    font-weight: bold;
+    overflow: hidden;
+  }
+  .main-right h3{
+    overflow: hidden;
+    font-size: 1.5rem;
+
+  }
+
+  /* make this responsive */
+
+  @media screen and (max-width: 768px) {
+    .Mian_page {
+      flex-direction: column;
+      min-height: 80vh;
+      height: 100%;
+      margin-top: 17vh;
+      padding: 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .main-left{
+      width: 100%;
+      height: 50%;
+      /* border: 2px solid red; */
+    }
+    .main-left img{
+      width: 100%;
+      height: 100%;
+    }
+    .main-right{
+      width: 100%;
+      height: 50%;
+      /* border: 2px solid red; */
+    }
+    .main-right-top{
+      width: 100%;
+      height: 100%;
+      /* border: 2px solid red; */
+    }
+    .main-right h1{
+      font-size: 3rem;
+    }
+    .main-right h3{
+      font-size: 1.7rem;
+    }
+    .main-right button{
+      width: 100%;
+      height: 100%;
+    }
+  }
+  
+
+
+
+.ProductsPage{
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 2rem;
+    width: 100%;
+    /* padding: 5rem 0; */
+    /* height: 100vh; */
+    /* background-color: black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+
+
+  .heading h1{
+    font-size: 3rem;
+    color: var(--textclr);
+    font-weight: bold;
+    overflow: hidden;
+    text-align: center;
+    margin: 5rem 0;
+  }
+
+
+  .productcard{
+    width: 300px;
+    /* height: 100%; */
+    /* border: 1px solid grey; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border-radius: 40px; */
+    transition: all 0.3s ease-in-out;
+    
+    box-sizing: border-box;
+    padding: 0%;
+     /* gap: 2rem; */
+    }
+
+    .products a{
+      box-shadow: 2px 2px 2px 2px rgba(107, 107, 107, 0.2);
+      border-radius: 10px;
+    }
+  .products{
+    width: 100%;
+    height: 100%;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+
+
+
+
+
+
+  .mt-10vh{
+    margin-top: 10vh;
+  }
+
+
+
+  .mt-15{
+    margin-top: 15vh;
+  }
+
+
+  .home3{
+    max-width: 1500px;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    padding:5rem 0;
+   /* two images diagonally on linearly*/
+    background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://kelownadowntownmarina.com/assets/image-cache/uploads/banners/Moorage.a48c5f21.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* border: 2px solid red; */
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: center;
+    align-items: center;
+    /* gap: 2rem; */
+    flex-wrap: wrap;
+  }
+
+  .home3 h1{
+    font-size: 3rem;
+    color: white;
+    font-weight: bold;
+    overflow: hidden;
+    text-align: center;
+    /* margin: 5rem 0; */
+  }
+
+  .home3 p{
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+    overflow: hidden;
+    text-align: center;
+    margin: 5rem 0;
+  }
+
+  /* make this responsive  */
+
+  @media screen and (max-width: 768px) {
+    .home3{
+      flex-direction: column;
+      min-height: 80vh;
+      height: 100%;
+      margin-top: 17vh;
+      padding: 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .home3 h1{
+      font-size: 3rem;
+    }
+    .home3 p{
+      font-size: 1.7rem;
+    }
+  }
+
+  .home2upper{
+    width: 100%;
+    /* height: 50%; */
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.home2{
+    max-width: 1600px;
+    margin: 0 auto;
+    width: 100%;
+    height: 25vh;
+    background-color:    black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10rem;
+}
+.home2 button{
+/* background-color: #af8b1b; */
+color: #ffffff;
+border: 2px solid #ffffff;
+padding: 15px 25px;
+font-weight: bold;
+border-radius: 5px;
+transition: all 0.5s ease;
+}
+
+.home2 button:hover{
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.innerhome2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+}
+.innerhome2 h1{
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+    overflow: hidden;
+  }
+
+/* make this responsive */
+@media screen and (max-width: 768px){
+     .home1{
+        height: 70vh;
+    }
+
+    .home2{
+        min-height: 30vh;
+        height: 100%;
+    }
+    .home2{
+        padding:2rem;
+        flex-direction: column;
+    }
+    .innerhome2{
+        width: 100%;
+    }
+}
+
+
+
+

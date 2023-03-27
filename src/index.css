@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@600&family=Itim&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+
+}
+:root{
+    --primary-color: #c09578;
+    --nav-font-family: 'Archivo', sans-serif;
+
+}
+
+/* media query for mobile view */
+
+@media screen and (max-width: 768px) {
+    .MainProduct{
+        width: 100vw;
+        /* border: 2px solid red; */
+        padding: 0px;
+        /* display: none; */
+    }
+    .innerProduct{
+        width: 100vw !important;
+        /* border: 2px solid red; */
+        padding: 0px;
+
+        /* display: none; */
+    }
+}

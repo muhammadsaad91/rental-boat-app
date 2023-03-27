@@ -1,0 +1,56 @@
+.logo{
+  width: 100px !important;
+}
+
+.hamburger-menu{
+  display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    height: 2.5rem;
+    width: 2.5rem;
+    cursor: pointer;
+}
+
+.hamburger-menu .bar{
+  height: 5px;
+  background: black;
+  border-radius: 5px;
+  margin: 3px 0px;
+  transform-origin: left;
+  transition: all 0.5s;
+}
+
+
+.top-rotate{
+  transform: rotate(45deg);
+}
+
+.bottom-rotate{
+  transform: rotate(-45deg);
+}
+
+.opacity-0{
+  opacity: 0;
+}
+
+.block{
+  display: block;
+}
+
+.none{
+  display: none;
+}
+
+
+.leftmost{
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+
+@media screen and (max-width: 768px){
+  .Ad{
+    display: none;
+  }
+}
